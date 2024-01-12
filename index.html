@@ -12,44 +12,54 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link
+      rel=""
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
   </head>
   <body>
-    <nav>
-     <div class="container d-flex justify-content-between align-items-center conti py-5 gap-3">
-      <div class="shipsmem">
-        <i class="fa-solid fa-bars px-1"></i>
-        <a class="px-1 m-0" href="#">MEMBERSHIPS</a>
-        <a class="px-1 m-0" href="#">FLEET</a>
-        <a class="px-1 m-0" href="#">EXPERIENCE</a>
-      </div>
-
-      <div class="two">
-        <i class="fa-sharp fa-solid fa-plane-slash fa-3x"></i>
-      </div>
-
-      <div class="four gap-4">
-        <p class="three m-0 pt-2">Call us <a href="#"> +2348062704856</a></p>
-        <div class="position-relative">
-          <i class="fa-solid fa-globe fa-2x sodiq"></i>
-          <div class="olakunle position-absolute">
-            <select name="LANGUAGE" id="LANGUAGE">
-              <option value="English (US)">English (US)</option>
-              <option value="English">English</option>
-              <option value="Español">Español</option>
-              <option value="Español">Español</option>
-              <option value="Français">Français</option>
-              <option value="Italiano">Italiano</option>
-              <option value="Deutsch">Deutsch</option>
-              <option value="Svenska">Svenska</option>
-              <option value="简体中文">简体中文</option>
-              <option value="한국어">한국어</option>
-              <option value="العربية">العربية</option>
-            </select>
-          </div>
+    <nav class="d-flex">
+      <div
+        class="d-flex flex-md-column flex-lg-row py-4 container-lg justify-content-between align-items-center"
+      >
+        <div
+          class="shipsmem d-flex flex-column flex-md-row gap-2 align-items-center pt-1"
+        >
+          <i class="fa-solid fa-bars fs-1 mb-2 px-1"></i>
+          <p class="fs-4 m-0 d-none d-sm-block">FLEET</p>
+          <p class="fs-4 m-0 d-none d-sm-block">EXPERIENCE</p>
+          <p class="fs-4 m-0 d-none d-sm-block">MEMBERSHIPS</p>
         </div>
-        <button class="requesta">REQUEST A QUOTE</button>
+
+          <i class="fa-solid fa-plane-slash slash fa-3x py-4"></i>
+
+        <div
+          class="four d-flex flex-column flex-md-row align-items-center gap-3 px-3"
+        >
+          <p class="m-0 pt-2 fs-4 d-none d-sm-block">Call us +23400000000000</p>
+          <div class="position-relative">
+            <i class="fa-solid fa-globe fa-2x sodiq"></i>
+            <div class="olakunle position-absolute">
+              <select name="LANGUAGE" id="LANGUAGE">
+                <option value="English (US)">English (US)</option>
+                <option value="English">English</option>
+                <option value="Español">Español</option>
+                <option value="Español">Español</option>
+                <option value="Français">Français</option>
+                <option value="Italiano">Italiano</option>
+                <option value="Deutsch">Deutsch</option>
+                <option value="Svenska">Svenska</option>
+                <option value="简体中文">简体中文</option>
+                <option value="한국어">한국어</option>
+                <option value="العربية">العربية</option>
+              </select>
+            </div>
+          </div>
+          <button class="requesta rounded-4 px-4 py-1 d-none d-sm-block">
+            REQUEST A QUOTE
+          </button>
+        </div>
       </div>
-     </div>
     </nav>
     <!-- ============================= -->
     <section class="sections_ss px-5 py-3">
@@ -81,16 +91,23 @@
             </p>
           </div>
         </div>
-        <div class="fa_solid">
-          <i class="fa-solid fa-plane-departure text-body-tertiary"> from </i>
+        <div class="fa_solid px-3 py-3">
+          <div class="d-flex align-items-center gap-2">
+            <i class="fa-solid fa-plane-departure text-body-tertiary"></i>
+            <p class="m-0">From</p>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="fa-solid fa-plane-slash text-body-tertiary"></i>
+            <p class="m-0">To</p>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="fa-regular fa-calendar-days text-body-tertiary"></i>
+            <p class="m-0">Date</p>
+          </div>
 
-          <i class="fa-solid fa-plane-slash text-body-tertiary"> to </i>
-
-          <i class="fa-regular fa-calendar-days text-body-tertiary"> date </i>
-
-          <div class="heee">
+          <div class="d-flex align-items-center gap-2">
             <i class="fa-solid fa-minus text-body-tertiary"></i>
-            <p>1 Passanger</p>
+            <p class="m-0">1Passanger</p>
             <i class="fa-solid fa-plus text-body-tertiary"></i>
           </div>
         </div>
@@ -102,7 +119,7 @@
 
     <!-- ======================================== -->
 
-    <article class="">
+    <article class="container pt-5">
       <div class="airplane">
         <div class="prog">
           <img src="./airplane3.jpeg" alt="airplane3" />
@@ -136,15 +153,15 @@
             </p>
           </div>
         </div>
-        <div class="global">
-          <h1><span>A [GSO] GIWA SODIQ OLAMIDE JET FLEET</span></h1>
-          <p>
-            Renowned for its consistency, the distinctive silver and red fleet
-            is equipped for all needs — whether you need a fully enabled
-            business suite or a restful home away from home space.
-          </p>
-          <button class="feet">EXPLORE THE FEET</button>
-        </div>
+      </div>
+      <div class="global">
+        <h1><span>A [GSO] GIWA SODIQ OLAMIDE JET FLEET</span></h1>
+        <p>
+          Renowned for its consistency, the distinctive silver and red fleet is
+          equipped for all needs — whether you need a fully enabled business
+          suite or a restful home away from home space.
+        </p>
+        <button class="feet">EXPLORE THE FEET</button>
       </div>
     </article>
     <!-- ============================================= -->
@@ -165,46 +182,38 @@
       </div>
     </aside>
     <!-- ======================================= -->
-    <footer>
-      <div class="vista">
-        <div class="ppppp">
-          <div class="thecabin">
-            <p class="fs-5">THE CABIN CONCEPT</p>
-            <p>
-              To fly with VistaJet is to feel at home, in surroundings you know
-              and trust
-            </p>
-            <p>
-              Developed by the VistaJet design team, the cabin concept is
-              intentionally universal, translating seamlessly across the globe.
-            </p>
-          </div>
+    <footer class="container-lg">
+      <div class="ppppp d-flex flex-column flex-xl-row align-items-center">
+        <div class="thecabin d-flex flex-column p-5 gap-3">
+          <p class="fs-5">THE CABIN CONCEPT</p>
+          <p>
+            To fly with VistaJet is to feel at home, in surroundings you know
+            and trust
+          </p>
+          <p>
+            Developed by the VistaJet design team, the cabin concept is
+            intentionally universal, translating seamlessly across the globe.
+          </p>
           <button class="consis">CONSISTENT INTERIOR</button>
         </div>
-        <div>
-          <img class="imgvista" src="./hostresss12.jpg" alt="" />
-        </div>
+        <img class="imgvista" src="./hostresss12.jpg" alt="" />
       </div>
+
       <!-- =================== -->
-      <div class="crewensure">
-        <div>
-          <img class="imgjet_cabin" src="./hostess1.jpg" alt="" />
-        </div>
-        <div class="ourcrew">
-          <div class="toensure">
-            <div>
-              <p class="fs-5">SERVICE</p>
-              <p>
-                To ensure passengers enjoy unrivaled service as standard, every
-                VistaJet flight has at least one Cabin Hostess as well as two
-                crew in the flight deck.
-              </p>
-              <p>
-                Our crew is trained by the British Butler Institute, Norland
-                College, and Wine & Education Trust.
-              </p>
-            </div>
-          </div>
+      <div class="ppppp d-flex flex-column flex-xl-row align-items-center">
+        <img class="imgjet_cabin" src="./hostess1.jpg" alt="" />
+
+        <div class="thecabin d-flex flex-column p-5 gap-3">
+          <p class="fs-5">SERVICE</p>
+          <p>
+            To ensure passengers enjoy unrivaled service as standard, every
+            VistaJet flight has at least one Cabin Hostess as well as two crew
+            in the flight deck.
+          </p>
+          <p>
+            Our crew is trained by the British Butler Institute, Norland
+            College, and Wine & Education Trust.
+          </p>
           <button class="details">ATTENTION TO DETAIL</button>
         </div>
       </div>
@@ -212,98 +221,136 @@
 
     <!-- ===================================================== -->
 
-    <div class="dividend_1">
-      <div class="firstd">
-        <a class="memberships text-decoration-none text-white" href="#"
-          >Memberships</a
-        >
-        <div class="class_less">
-          <a class="text-decoration-none text-white" href="#">Program</a>
-          <a class="text-decoration-none text-white" href="#">GSO25</a>
-          <a class="text-decoration-none text-white" href="#">Corporate</a>
-        </div>
-      </div>
-      <!-- =========================== -->
-      <div class="secondd">
-        <a class="text-decoration-none fleets text-white" href="#">Fleet</a>
-        <div class="diva">
-          <a class="text-decoration-none text-white" href="#">Global 7500</a>
-          <a class="text-decoration-none text-white" href="#">Global 6000</a>
-          <a class="text-decoration-none text-white" href="#">Global 5000</a>
-          <a class="text-decoration-none text-white" href="#">Challenger 850</a>
-          <a class="text-decoration-none text-white" href="#">Challenger 605</a>
-          <a class="text-decoration-none text-white" href="#">Challenger 350</a>
-        </div>
-      </div>
-      <!-- =========================== -->
-      <div class="private_dining">
-        <a class="text-decoration-none exper text-white">Experience</a>
-        <div class="private_word">
-          <a class="text-decoration-none text-white" href="#">Private World</a>
-          <a class="text-decoration-none text-white" href="#">Private Dining</a>
-          <a class="text-decoration-none text-white" href="#"
-            >Adventures in the sky</a
+    <div class="dividend_1 py-4">
+      <div class="gap-4 divid container-lg">
+        <div class="d-flex flex-column align-items-center">
+          <a class="text-decoration-none text-white fs-3 fw-bold" href="#"
+            >Memberships</a
           >
-          <a class="text-decoration-none text-white" href="#">GSO Pet</a>
-          <a class="text-decoration-none text-white" href="#"
-            >Wine in the sky</a
-          >
+          <div class="d-flex flex-column align-items-center">
+            <a class="text-decoration-none text-white fs-5" href="#">GSO25</a>
+            <a class="text-decoration-none text-white fs-5" href="#">Program</a>
+            <a class="text-decoration-none text-white fs-5" href="#"
+              >Corporate</a
+            >
+          </div>
         </div>
-      </div>
-      <!-- ============================== -->
-      <div class="cookienot">
-        <a class="text-decoration-none legall text-white" href="#">Legal</a>
-        <div class="privacy_notice">
-          <a class="text-decoration-none text-white" href="#">Privacy Notice</a>
-          <a class="text-decoration-none text-white" href="#">Cookie Notice</a>
-          <a class="text-decoration-none text-white" href="#"
-            >Your Privacy Rights</a
+        <!-- =========================== -->
+        <div class="d-flex flex-column align-items-center">
+          <a
+            class="text-decoration-none fleets text-white fs-3 fw-bold"
+            href="#"
+            >Fleet</a
           >
-          <a class="text-decoration-none text-white" href="#"
-            >COVID-19 Notice</a
-          >
+          <div class="d-flex flex-column align-items-center">
+            <a class="text-decoration-none text-white fs-5" href="#"
+              >Global 7500</a
+            >
+            <a class="text-decoration-none text-white fs-5" href="#"
+              >Global 6000</a
+            >
+            <a class="text-decoration-none text-white fs-5" href="#"
+              >Global 5000</a
+            >
+            <a class="text-decoration-none text-white fs-5" href="#"
+              >Challenger 850</a
+            >
+            <a class="text-decoration-none text-white fs-5" href="#"
+              >Challenger 605</a
+            >
+            <a class="text-decoration-none text-white fs-5" href="#"
+              >Challenger 350</a
+            >
+          </div>
         </div>
-      </div>
-      <!-- ============================= -->
-      <div class="presss">
-        <a class="text-decoration-none contactus text-white" href="#"
-          >Contact Us</a
-        >
-        <div class="carreers">
-          <a class="text-decoration-none text-white" href="#">Careers</a>
-          <a class="text-decoration-none text-white" href="#">Investors</a>
-          <a class="text-decoration-none text-white" href="#">Press</a>
+        <!-- =========================== -->
+        <div class="d-flex flex-column align-items-center">
+          <a class="text-decoration-none text-white fs-3 fw-bold">Experience</a>
+          <div class="d-flex flex-column align-items-center">
+            <a class="text-decoration-none text-white fs-5" href="#">GSO Pet</a>
+            <a class="text-decoration-none text-white fs-5" href="#"
+              >Private World</a
+            >
+            <a class="text-decoration-none text-white fs-5" href="#"
+              >Private Dining</a
+            >
+            <a class="text-decoration-none text-white fs-5" href="#"
+              >Wine in the sky</a
+            >
+            <a class="text-decoration-none text-white fs-5" href="#"
+              >Adventures in the sky</a
+            >
+          </div>
+        </div>
+        <!-- ============================== -->
+        <div class="d-flex flex-column align-items-center">
+          <a class="text-decoration-none text-white fs-3 fw-bold" href="#"
+            >Legal</a
+          >
+          <div class="d-flex flex-column align-items-center">
+            <a class="text-decoration-none text-white fs-5" href="#"
+              >Cookie Notice</a
+            >
+            <a class="text-decoration-none text-white fs-5" href="#"
+              >Privacy Notice</a
+            >
+
+            <a class="text-decoration-none text-white fs-5" href="#"
+              >COVID-19 Notice</a
+            >
+            <a class="text-decoration-none text-white fs-5" href="#"
+              >Your Privacy Rights</a
+            >
+          </div>
+        </div>
+        <!-- ============================= -->
+        <div class="d-flex flex-column align-items-center">
+          <a class="text-decoration-none text-white fs-3 fw-bold" href="#"
+            >Contact Us</a
+          >
+          <div class="d-flex flex-column align-items-center">
+            <a class="text-decoration-none text-white fs-5" href="#">Press</a>
+            <a class="text-decoration-none text-white fs-5" href="#">Careers</a>
+            <a class="text-decoration-none text-white fs-5" href="#"
+              >Investors</a
+            >
+          </div>
         </div>
       </div>
     </div>
     <!-- ========================================= -->
-    <div class="lastman">
-      <div class="thisweb">
-        <p>
+    <div class="">
+      <div class="webss py-3 gap-2 container">
+        <p class="fs-5 w-50">
           This website uses cookies, small amounts of data from the server,
-          stored on your device. This helps us improve our services and to
+          stored on your device. This helps us imporove our services and to
           deliver a better, more personalised service.
         </p>
-        <div class="inputtt">
-          <input type="checkbox" name="love" id="Necessary" value="" />Necessary
-          <input
-            type="checkbox"
-            name="love"
-            id="Preferences"
-            value=""
-          />Preferences
-          <input type="checkbox" name="love" id="Marketing" value="" />Marketing
-          <input
-            type="checkbox"
-            name="love"
-            id="Statistics"
-            value=""
-          />Statistics
+
+        <div class="d-flex flex-column mb-4">
+          <div class="d-flex flex-row px-1 gap-1">
+            <input type="checkbox" />
+            <p class="m-0 fs-5">statistics</p>
+          </div>
+          <div class="d-flex flex-row px-1 gap-1">
+            <input type="checkbox" />
+            <p class="m-0 fs-5">Necessary</p>
+          </div>
+          <div class="d-flex flex-row px-1 gap-1">
+            <input type="checkbox" />
+            <p class="m-0 fs-5">Preferences</p>
+          </div>
+          <div class="d-flex flex-row px-1 gap-1">
+            <input type="checkbox" />
+            <p class="m-0 fs-5">Marketing</p>
+          </div>
         </div>
-      </div>
-      <div class="pclass">
-        <button class="botton1">ALLOW ALL COOKIES</button>
-        <button class="botton2">ALLOW SECTION</button>
+        <div class="d-flex flex-column gap-1">
+          <button class="botton1 px-3 py-2 rounded-5 mb-2">
+            ALLOW ALL COOKIES
+          </button>
+          <button class="botton2 px-4 py-2 rounded-5">ALLOW SECTION</button>
+        </div>
       </div>
     </div>
 

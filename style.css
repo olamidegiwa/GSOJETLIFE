@@ -13,39 +13,13 @@ a {
   padding: 0;
   box-sizing: border-box;
 }
-@media (width < 768px) {
-  .conti {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
+
+.shipsmem {
+  color: grey;
 }
 
-.shipsmem a {
-  text-decoration: none;
-  color: gray;
-}
-@media (width < 768px) {
-  .shipsmem {
-    display: flex;
-    flex-direction: column;
-  }
-}
 .shipsmem :hover {
   cursor: pointer;
-  color: brown;
-}
-
-.two i {
-  color: brown;
-}
-.three {
-  color: grey;
-}
-.three a {
-  color: grey;
-}
-.three :hover {
   color: brown;
 }
 
@@ -57,9 +31,7 @@ a {
   background-color: darkred;
   color: white;
   border: none;
-  border-radius: 18px;
-  width: 200px;
-  height: 34px;
+
   box-shadow: 11px 9px 38px -1px rgba(0, 0, 0, 0.16);
 }
 .four button:hover {
@@ -67,19 +39,6 @@ a {
   background-color: brown;
 }
 
-.four {
-  display: flex;
-  gap: 10px;
-  align-items: start;
-}
-
-@media (width < 786px) {
-  .four {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
-}
 .sodiq {
   cursor: pointer;
 }
@@ -92,23 +51,11 @@ a {
   transform: scale(1);
 }
 nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
   background-color: whitesmoke;
-}
-
-@media (width < 768px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  }
 }
 .requestent,
 .quotepri {
-  width: auto;
+  width: 100%;
   max-width: 430px;
   border-right: 2px solid grey;
 }
@@ -126,7 +73,6 @@ nav {
   max-width: 420px;
 }
 .sections_ss {
-  align-items: end;
   background-color: whitesmoke;
 }
 .section1 {
@@ -141,31 +87,26 @@ nav {
   }
 }
 
-.heee {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .fa_solid {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   border: 1px solid grey;
   background: white;
-  padding: 20px;
-  height: 70px;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   border-radius: 40px;
   margin-top: 10px;
   margin-bottom: 14px;
 }
-@media (width < 768px) {
+@media (width < 576px) {
   .fa_solid {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 220px;
+    width: 100%;
+    max-width: 220px;
     height: 350px;
     margin-bottom: 30px;
   }
@@ -186,17 +127,20 @@ nav {
 
 article {
   background-color: #ffffff;
+  align-items: center;
 }
 
 article img {
+  width: 100%;
   max-width: 440px;
-  height: 400px;
+  aspect-ratio: 9/8;
 }
 .program1,
 .cooperate1,
 .vj25 {
   background: whitesmoke;
   color: grey;
+  width: 100%;
   max-width: 440px;
   height: 250px;
   padding: 22px;
@@ -206,19 +150,18 @@ article img {
 .coop {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .airplane {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  box-sizing: border-box;
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-@media (width < 1350px) {
+@media (width > 768px) {
   .airplane {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 12px;
   }
 }
 
@@ -288,7 +231,8 @@ p {
 .consis {
   border: 1px solid black;
   border-radius: 18px;
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   height: 34px;
 }
 .consis:hover {
@@ -296,40 +240,21 @@ p {
   color: brown;
   border: 1px solid brown;
 }
-.thecabin,
-.toensure {
-  display: flex;
-  flex-direction: column;
-  align-content: start;
-  gap: 10px;
+.slash {
+  color: darkred;
 }
 .ppppp,
 .ourcrew {
   background-color: whitesmoke;
-  max-width: 600px;
-  height: 408px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding: 30px;
-  margin-bottom: 60px;
 }
+
 .imgvista,
 .imgjet_cabin {
   width: 100%;
+  max-width: 800px;
+  aspect-ratio: 12/9;
 }
-.vista,
-.crewensure {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-@media (width < 1200px) {
-  .vista {
-    display: flex;
-    flex-direction: column;
-  }
-}
+
 footer {
   box-sizing: border-box;
   width: auto;
@@ -340,7 +265,8 @@ footer {
 .details {
   border: 1px solid black;
   border-radius: 18px;
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   height: 34px;
 }
 .details:hover {
@@ -356,57 +282,27 @@ footer {
 }
 /* =========================== */
 
-.exper,
-.contactus,
-.memberships,
-.fleets,
-.legall {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.private_word,
-.carreers,
-.diva,
-.privacy_notice,
-.class_less {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  color: white;
-}
-.private_dining,
-.presss,
-.secondd,
-.cookienot,
-.firstd {
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
-  font-size: small;
-}
-
 .dividend_1 {
-  display: flex;
-  gap: 18px;
-  justify-content: center;
   background-color: darkred;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  /* margin-bottom: 160px; */
 }
-@media (width<800px) {
-  .dividend_1 {
+.divid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (width > 800px) {
+  .divid {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 }
+
 /* ============================== */
-/* ============================== */
+
 .botton2 {
   border: 1px solid black;
-  border-radius: 18px;
-  width: 200px;
-  height: 34px;
   background-color: white;
 }
 .botton2:hover {
@@ -417,52 +313,11 @@ footer {
   background-color: darkred;
   color: white;
   border: none;
-  border-radius: 18px;
-  width: 200px;
-  height: 34px;
-  margin-bottom: 10px;
   box-shadow: 11px 9px 38px -1px rgba(0, 0, 0, 0.16);
 }
 .botton1:hover {
   cursor: pointer;
   background-color: brown;
-}
-
-.inputtt {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: grey;
-}
-.thisweb,
-.pclass {
-  display: flex;
-  flex-direction: column;
-  padding: 14px;
-  align-items: start;
-}
-@media (width < 800px) {
-  .inputtt {
-    display: flex;
-    flex-direction: column;
-  }
-}
-.lastman {
-  display: flex;
-  max-width: 1250px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  /* position: fixed;
-  background-color: white;
-  bottom: 0; */
-}
-@media (width < 850px) {
-  .lastman {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 select {
@@ -474,4 +329,18 @@ select:hover {
   cursor: pointer;
   background: darkred;
   color: #ffffff;
+}
+.webss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (width > 900px) {
+  .webss {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
